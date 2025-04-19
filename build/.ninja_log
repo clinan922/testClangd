@@ -1,0 +1,8 @@
+# ninja log v6
+16	373	7667531730630584	CMakeFiles/TestClang.dir/main.cpp.obj	1c8715dbf4fa03e8
+9	336	7667509059505040	CMakeFiles/TestClang.dir/src/MulFile.cpp.obj	98d09c539ee96794
+15	203	7667534623271415	build.ninja	af1d6e8cf63bad6f
+373	446	7667531734200271	TestClang.exe	47af293873fced42
+15	203	7667534623261447	D:/2025workplace/testClangd/build/cmake_install.cmake	af1d6e8cf63bad6f
+13	382	7667534623832003	CMakeFiles/TestClang.dir/main.cpp.obj	1c8715dbf4fa03e8
+382	450	7667534627530592	TestClang.exe	47af293873fced42
