@@ -1,0 +1,97 @@
+---
+# ================================== 语言和标准 ==================================
+Language: Cpp                     # 指定语言为 C++
+Standard: c++20                   # 使用 C++20 标准（支持 Concepts/Ranges/Modules 等特性）
+
+# ================================== 基础风格 ==================================
+BasedOnStyle: LLVM                # 继承 LLVM 基础代码风格（4空格缩进，大括号换行等）
+
+# ================================== 缩进与空格 ==================================
+AccessModifierOffset: -4          # 访问修饰符（public/private）的缩进偏移量（负数表示左对齐）
+IndentWidth: 4                    # 缩进宽度为 4 空格
+UseTab: Never                     # 禁止使用 Tab 键，强制使用空格缩进
+TabWidth: 4                       # Tab 键等效空格数（与缩进宽度一致）
+ContinuationIndentWidth: 4        # 换行后的续行缩进宽度（如函数参数换行时）
+
+# ================ 关键字与运算符空格 ================
+SpaceBeforeParens: ControlStatements # 在控制语句（if/for/while）后加空格，例如：`if (x)` ✅
+SpaceAfterTemplateKeyword: true    # 在 `template` 关键字后加空格，例如：`template <T>` ✅
+SpaceBeforeAssignmentOperators: true # 在赋值运算符（=, +=）前加空格，例如：`x = 5` ✅
+PointerAlignment: Right           # 指针符号右对齐，例如：`int* ptr` ✅（错误示例：`int *ptr`）
+
+# ================================== 大括号换行规则（Allman 风格） ==================================
+BreakBeforeBraces: Custom         # 自定义大括号换行规则（需配合下面的 `BraceWrapping`）
+BraceWrapping:                    # 大括号换行详细规则（仅在 `BreakBeforeBraces: Custom` 时生效）
+  AfterClass: true               # 类定义后不强制换行
+  AfterControlStatement: true     # 控制语句（if/for）后不强制换行
+  AfterEnum: false                 # 枚举定义后不强制换行
+  AfterFunction: true             # 函数定义后不强制换行
+  AfterNamespace: false           # 命名空间后不强制换行
+  AfterStruct: false               # 结构体定义后不强制换行
+  AfterUnion: false                # 联合体定义后不强制换行
+  AfterExternBlock: false          # extern 块后不强制换行
+  BeforeCatch: false               # catch 前不强制换行
+  BeforeElse: false                # else 前不强制换行
+  IndentBraces: false              # 不缩进大括号内容
+  SplitEmptyFunction: false        # 不分离空函数的大括号
+  SplitEmptyRecord: false          # 不分离空结构体/类的大括号
+  SplitEmptyNamespace: false       # 不分离空命名空间的大括号
+
+# ================================== 对齐规则 ==================================
+AlignAfterOpenBracket: Align       # 在开括号（(/{/[）后对齐内容（如函数参数换行对齐）
+AlignConsecutiveAssignments: false # 不连续对齐赋值语句的等号
+AlignConsecutiveDeclarations: false # 不连续对齐变量声明
+AlignEscapedNewlines: Right       # 反斜杠换行时右对齐（多行宏定义）
+AlignOperands: true               # 对齐二元运算符的操作数（如 `a + b` 换行后对齐 `+`）
+AlignTrailingComments: true       # 对齐行尾注释（如多行注释对齐 `//`）
+
+# ================================== 代码块格式规则 ==================================
+AllowAllParametersOfDeclarationOnNextLine: false # 禁止函数声明的所有参数换行
+AllowShortBlocksOnASingleLine: true  # 允许短代码块放在同一行，例如：`if (x) { return; }`
+AllowShortCaseLabelsOnASingleLine: true # 允许短 case 标签放在同一行，例如：`case 1: break;`
+AllowShortFunctionsOnASingleLine: None # 禁止任何短函数放在同一行（强制换行）
+AllowShortIfStatementsOnASingleLine: true # 允许短 if 语句放在同一行，例如：`if (x) return;`
+AllowShortLoopsOnASingleLine: true  # 允许短循环放在同一行，例如：`for (int i=0; i<5; ++i) sum += i;`
+
+# ================================== 换行与断行规则 ==================================
+AlwaysBreakAfterReturnType: None   # 返回类型后不强制换行
+AlwaysBreakBeforeMultilineStrings: false # 多行字符串前不强制换行
+AlwaysBreakTemplateDeclarations: true # 模板声明后强制换行（如 `template<typename T>` 换行）
+BreakBeforeBinaryOperators: NonAssignment # 在非赋值运算符（如 +, &&）前换行
+BreakBeforeTernaryOperators: false # 在三元运算符前不换行
+BreakConstructorInitializers: AfterColon # 构造函数初始化列表在冒号后换行
+BreakStringLiterals: false         # 不强制换行字符串字面量
+
+# ================================== 其他格式化规则 ==================================
+ColumnLimit: 0                     # 不限制行宽（0表示禁用行宽限制）
+CompactNamespaces: true            # 压缩连续命名空间的声明（如 `namespace A { namespace B { ... }}`）
+ConstructorInitializerAllOnOneLineOrOnePerLine: false # 构造函数初始化列表不强制单行或多行
+ConstructorInitializerIndentWidth: 4 # 构造函数初始化列表的缩进宽度
+Cpp11BracedListStyle: true         # 使用 C++11 统一的大括号列表初始化风格（如 `vector<int> v{1, 2};`）
+DerivePointerAlignment: false      # 禁止自动推导指针对齐方式（需手动指定 `PointerAlignment`）
+FixNamespaceComments: true         # 自动修复命名空间的注释格式
+IndentCaseLabels: false            # case 标签不缩进（与 switch 对齐）
+IndentPPDirectives: None           # 预处理指令（如 `#define`）不缩进
+IndentWrappedFunctionNames: false  # 函数换行时函数名不缩进
+KeepEmptyLinesAtTheStartOfBlocks: false # 删除代码块起始处的空行
+MaxEmptyLinesToKeep: 1             # 允许最多连续 1 个空行
+NamespaceIndentation: None         # 命名空间内的内容不额外缩进
+
+# ================================== 注释与预处理指令 ==================================
+ReflowComments: true               # 允许自动重新排版注释（如对齐行尾注释）
+SortIncludes: false               # 禁止自动排序 #include 顺序
+SortUsingDeclarations: false       # 禁止自动排序 using 声明
+
+# ================ 特殊符号空格规则 ================
+SpaceAfterCStyleCast: false        # C 风格类型转换后不加空格（如 `(int)x` ✅）
+SpaceBeforeCpp11BracedList: false # C++11 列表初始化前不加空格（如 `vector<int> v{1, 2};` ✅）
+SpaceBeforeCtorInitializerColon: false # 构造函数初始化列表冒号前不加空格
+SpaceBeforeInheritanceColon: false # 继承列表冒号前不加空格
+SpaceBeforeRangeBasedForLoopColon: false # 范围 for 循环冒号前不加空格（如 `for (auto x : list)` ✅）
+SpaceInEmptyParentheses: false     # 空括号内不加空格（如 `func()` ✅）
+SpacesBeforeTrailingComments: 1    # 行尾注释前加 1 个空格（如 `// comment` ✅）
+SpacesInAngles: false              # 尖括号内不加空格（如 `vector<int>` ✅）
+SpacesInCStyleCastParentheses: false # C 风格类型转换的括号内不加空格（如 `(int)x` ✅）
+SpacesInContainerLiterals: true    # 容器字面量（如数组/字典）内加空格（如 `{1, 2, 3}` ✅）
+SpacesInParentheses: false         # 圆括号内不加空格（如 `func(a, b)` ✅）
+SpacesInSquareBrackets: false      # 方括号内不加空格（如 `arr[0]` ✅）

@@ -1,0 +1,20 @@
+[
+{
+  "directory": "D:/2025workplace/testClangd/build",
+  "command": "D:\\codeTools\\llvm20.1\\bin\\clang++.exe -ID:/2025workplace/testClangd/include -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -std=c++20 @CMakeFiles\\TestClang.dir\\main.cpp.obj.modmap -o CMakeFiles\\TestClang.dir\\main.cpp.obj -c D:\\2025workplace\\testClangd\\main.cpp",
+  "file": "D:\\2025workplace\\testClangd\\main.cpp",
+  "output": "CMakeFiles\\TestClang.dir\\main.cpp.obj"
+},
+{
+  "directory": "D:/2025workplace/testClangd/build",
+  "command": "D:\\codeTools\\llvm20.1\\bin\\clang++.exe -ID:/2025workplace/testClangd/include -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -std=c++20 @CMakeFiles\\TestClang.dir\\src\\MulFile.cpp.obj.modmap -o CMakeFiles\\TestClang.dir\\src\\MulFile.cpp.obj -c D:\\2025workplace\\testClangd\\src\\MulFile.cpp",
+  "file": "D:\\2025workplace\\testClangd\\src\\MulFile.cpp",
+  "output": "CMakeFiles\\TestClang.dir\\src\\MulFile.cpp.obj"
+},
+{
+  "directory": "D:/2025workplace/testClangd/build",
+  "command": "D:\\codeTools\\llvm20.1\\bin\\clang++.exe -ID:/2025workplace/testClangd/include -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -std=c++20 @CMakeFiles\\TestClang.dir\\src\\TestClangFormat.cpp.obj.modmap -o CMakeFiles\\TestClang.dir\\src\\TestClangFormat.cpp.obj -c D:\\2025workplace\\testClangd\\src\\TestClangFormat.cpp",
+  "file": "D:\\2025workplace\\testClangd\\src\\TestClangFormat.cpp",
+  "output": "CMakeFiles\\TestClang.dir\\src\\TestClangFormat.cpp.obj"
+}
+]

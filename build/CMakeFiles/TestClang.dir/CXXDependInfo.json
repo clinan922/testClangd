@@ -1,0 +1,40 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "Clang",
+	"compiler-simulate-id" : "MSVC",
+	"config" : "Debug",
+	"cxx-modules" : {},
+	"database-info" : null,
+	"dir-cur-bld" : "D:/2025workplace/testClangd/build",
+	"dir-cur-src" : "D:/2025workplace/testClangd",
+	"dir-top-bld" : "D:/2025workplace/testClangd/build",
+	"dir-top-src" : "D:/2025workplace/testClangd",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"D:\\2025workplace\\testClangd\\include"
+	],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "D:/2025workplace/testClangd/build/CMakeFiles/TestClang.dir",
+	"sources" : 
+	{
+		"CMakeFiles/TestClang.dir/main.cpp.obj" : 
+		{
+			"language" : "CXX",
+			"source" : "D:/2025workplace/testClangd/main.cpp"
+		},
+		"CMakeFiles/TestClang.dir/src/MulFile.cpp.obj" : 
+		{
+			"language" : "CXX",
+			"source" : "D:/2025workplace/testClangd/src/MulFile.cpp"
+		},
+		"CMakeFiles/TestClang.dir/src/TestClangFormat.cpp.obj" : 
+		{
+			"language" : "CXX",
+			"source" : "D:/2025workplace/testClangd/src/TestClangFormat.cpp"
+		}
+	}
+}

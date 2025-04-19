@@ -1,0 +1,7 @@
+ninja_dyndep_version = 1.0
+build CMakeFiles/TestClang.dir/main.cpp.obj: dyndep
+
+build CMakeFiles/TestClang.dir/src/MulFile.cpp.obj: dyndep
+
+build CMakeFiles/TestClang.dir/src/TestClangFormat.cpp.obj: dyndep
+

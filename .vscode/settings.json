@@ -1,5 +1,10 @@
 {
     "clangd.fallbackFlags": [
         "-I${workspaceFolder}/include"
-    ]
-}  
+    ],
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format",
+        "editor.formatOnSave": true,
+    },
+    "editor.fontSize": 16
+}

@@ -1,0 +1,9 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "CMakeFiles\\TestClang.dir\\src\\TestClangFormat.cpp.obj"
+    }
+  ],
+  "version": 1
+}
