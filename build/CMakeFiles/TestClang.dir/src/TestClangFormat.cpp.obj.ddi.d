@@ -87,11 +87,4 @@ CMakeFiles\TestClang.dir\src\TestClangFormat.cpp.obj.ddi: \
   D:\Windows\ Kits\10\Include\10.0.22621.0\ucrt\string.h \
   D:\Windows\ Kits\10\Include\10.0.22621.0\ucrt\corecrt_memory.h \
   D:\code\VisualStudio2022\VC\Tools\MSVC\14.41.34120\include\tuple \
-  D:\code\VisualStudio2022\VC\Tools\MSVC\14.41.34120\include\xpolymorphic_allocator.h \
-  D:\code\VisualStudio2022\VC\Tools\MSVC\14.41.34120\include\ranges \
-  D:\code\VisualStudio2022\VC\Tools\MSVC\14.41.34120\include\__msvc_int128.hpp \
-  D:\code\VisualStudio2022\VC\Tools\MSVC\14.41.34120\include\iosfwd \
-  D:\code\VisualStudio2022\VC\Tools\MSVC\14.41.34120\include\iterator \
-  D:\code\VisualStudio2022\VC\Tools\MSVC\14.41.34120\include\span \
-  D:\code\VisualStudio2022\VC\Tools\MSVC\14.41.34120\include\string_view \
-  D:\code\VisualStudio2022\VC\Tools\MSVC\14.41.34120\include\__msvc_string_view.hpp
+  D:\code\VisualStudio2022\VC\Tools\MSVC\14.41.34120\include\xpolymorphic_allocator.h
